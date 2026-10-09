@@ -1,0 +1,23 @@
+AWS INFRASTRUCTURE DEPLOYMENT POLICY
+
+Environment: Learning / Development
+
+1. AWS Region
+- Prefer ap-southeast-2 (Sydney) unless another region is explicitly required.
+
+2. Cost
+- Prefer low-cost AWS services and configurations.
+- Avoid NAT Gateway unless the workload genuinely requires it.
+- Reuse existing infrastructure where practical instead of creating unnecessary resources.
+
+3. Terraform
+- Infrastructure changes must be managed through Terraform.
+- Terraform configuration must be validated before deployment.
+- A Terraform plan must be reviewed before deployment.
+
+4. Destructive Operations
+- Destructive Terraform operations require explicit human approval.
+
+5. Environment Restrictions
+- This agent is authorised to work only with learning and development infrastructure.
+- Production deployments are not permitted.

@@ -1,0 +1,56 @@
+# Runtime credentials and local configuration
+.env
+.env.*
+!.env.example
+.aws/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Terraform local state, plans, caches and variable values
+.terraform/
+*.tfstate
+*.tfstate.*
+tfplan
+tfplan.*
+*.tfplan
+*.plan
+*.tfvars
+*.tfvars.json
+crash.log
+crash.*.log
+.terraformrc
+terraform.rc
+.tf-write-*
+
+# Python environments, caches and build output
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local audit/test tooling and generated sensitive output
+.security-review/
+logs/
+reports/
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Editor and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
